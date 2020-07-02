@@ -1,0 +1,108 @@
+*:not(button){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    background: #141414;
+    color: blue;
+    min-width: 100%;
+}
+
+.container {
+    transform: translate(20px,80px);        
+}
+
+.container h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.container h3 span {
+    color: #fff;
+}
+
+#textarea {
+   border-radius: 6px; 
+}
+
+#textarea:focus {
+    outline: none;
+}
+
+label {
+    text-align: center;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+#pitch__value,#rate__value {
+    font-weight: normal;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: blue;
+    color: #ddd;
+    padding: 10px;
+    line-height: 1px;
+    text-align: center;
+}
+
+#pitch,#rate {
+    min-width: 90%;
+    
+}
+ .button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.select__voice {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    
+    
+    
+}
+
+select {
+    min-width: 90%;
+    margin-right: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+select:focus {
+    outline: none;
+}
+
+/*.button {
+    margin-left: 50%;
+    margin-right: 50%;
+}*/
+
+.button button {
+    max-width: 100px;
+    min-height: 10px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 2px 20px;
+    transform: translateY(-2.5px);
+}
+
+.button img {
+    width: 70px;
+    height: 50px;
+    text-align: center;
+
+}
+
+button:focus {
+    outline: none;
+}
