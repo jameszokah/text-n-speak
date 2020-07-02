@@ -42,7 +42,7 @@ const speak = () => {
     }
     if(textInput.value !== '') {
         
-const speakText = new speechSynthesisUtterance(textInput.value);
+const speakText = new SpeechSynthesisUtterance(textInput.value);
 
 speakText.onend = e => {
     alert('finished speaking');
@@ -80,4 +80,4 @@ rate.addEventListener('change', e => rateValue.textContent = rate.value );
 
 pitch.addEventListener('change', e => pitchValue.textContent = pitch.value );
 
-select.addEventListener('change', e => speak())
+select.addEventListener('change',speak());
