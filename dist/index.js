@@ -78,6 +78,6 @@ form.addEventListener('submit', e => {
 
 rate.addEventListener('change', e => rateValue.textContent = rate.value );
 
-pitch.addEventListener('change', e => pitchValue.textContent = pitch.value );
+pitch.addEventListener('change', e => pitchValue.textContent = pitch.value  );
 
 select.addEventListener('change',speak());
