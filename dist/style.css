@@ -16,11 +16,14 @@ body {
    transform: translate(25px,0px);        
 }
 
-.container h3 {
+ .container h3 {
     text-align: center;
     padding: 10px;
     font-style: italic;
     color: #0A169F;
+    position: absolute;
+    top: 180px;
+    left: 120px;
 }
 
 .container h3 span {
@@ -29,11 +32,12 @@ body {
 
 #textarea {
    border-radius: 6px; 
+   
 }
 
 #textarea:focus {
     outline: none;
-    padding: 7px;
+    padding: 4px;
     box-sizing: border-box;
 }
 
@@ -45,13 +49,15 @@ label {
 
 #pitch__value,#rate__value {
     font-weight: normal;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: blue;
     color: #ddd;
-    padding-right: 5px;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 5px ;
     text-align: center;
     margin: 5px;
@@ -142,6 +148,25 @@ button:focus {
     background: #0F20D9;
     cursor: pointer;
 }
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+    
+}
+
+#wave {
+    display: none;
+}
+
+
+
+
+
+
+ 
 
 }
 
