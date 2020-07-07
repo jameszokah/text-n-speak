@@ -8,6 +8,7 @@ const pitch = document.getElementById('pitch');
 const form = document.querySelector('form');
 let rateValue = document.querySelector('#rate__value');
 let pitchValue = document.querySelector('#pitch__value');
+const wave = document.getElementById('wave');
 
 let voices = [];
 
@@ -36,19 +37,28 @@ synth.onvoiceschanged = voiceList;
 }
 
 const speak = () => {
+    
+    
+    
     if(synth.speaking) {
+        
         alert('Already speaking ...');
         return;
     }
     if(textInput.value !== '') {
-        
+        wave.style.display = 'block';
 const speakText = new SpeechSynthesisUtterance(textInput.value);
 
+
 speakText.onend = e => {
-    alert('finished speaking');
+    wave.style.display = 'none';
+    
 }
 
 speakText.onerror = e => {
+    wave.style.display = 'none';
+    console.error('error: ' + e);
+    
     alert('Something went wrong!');
 }
 

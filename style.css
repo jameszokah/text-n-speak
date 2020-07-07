@@ -16,11 +16,14 @@ body {
    transform: translate(25px,0px);        
 }
 
-.container h3 {
+ .container h3 {
     text-align: center;
     padding: 10px;
     font-style: italic;
-    color: #0A169F;
+    color: #6A75F0;
+    position: absolute;
+    top: 180px;
+    left: 120px;
 }
 
 .container h3 span {
@@ -29,11 +32,12 @@ body {
 
 #textarea {
    border-radius: 6px; 
+   
 }
 
 #textarea:focus {
     outline: none;
-    padding: 7px;
+    padding: 4px;
     box-sizing: border-box;
 }
 
@@ -45,13 +49,15 @@ label {
 
 #pitch__value,#rate__value {
     font-weight: normal;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: blue;
     color: #ddd;
-    padding-right: 5px;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 5px ;
     text-align: center;
     margin: 5px;
@@ -142,6 +148,115 @@ button:focus {
     background: #0F20D9;
     cursor: pointer;
 }
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+    
+}
+
+#wave {
+    display: none;
+}
+
+
+.center {
+ /*   position: absolute;
+    top: 20%;
+    left: 9%;
+    border: 1px solid #ccc;
+    border-radius: 50%;*/
+    margin-left: 6px;
+    padding: 10px;
+    box-shadow: 45px 45px 45px rgba(0, 0, 0, 0.4);
+
+}
+
+.heart {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    transform: rotate(45deg) translate(2px, 2px);
+    z-index: 1;
+
+
+}
+
+.heart::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    top: -6px;
+    left: 0;
+    border-radius: 50%;
+
+
+}
+
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    right: 6px;
+    bottom: 0;
+    border-radius: 50%;
+
+
+}
+
+.center::before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+
+.heart {
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(45deg) translate(2px, 2px) scale(1);
+    }
+
+    25% {
+        transform: rotate(45deg) translate(2px, 2px) scale(1.2);
+    }
+
+    50% {
+        transform: rotate(45deg) translate(2px, 2px) scale(1.4);
+    }
+
+    70% {
+        transform: rotate(45deg) translate(2px, 2px) scale(1.2);
+    }
+
+    90% {
+        transform: rotate(45deg) translate(2px, 2px) scale(1);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(2px, 2px) scale(1);
+    }
+}
+
+ a {
+    color: #7984FC;
+}
+
+
+ 
 
 }
 
