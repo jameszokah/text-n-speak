@@ -56,6 +56,9 @@ speakText.onend = e => {
 }
 
 speakText.onerror = e => {
+    wave.style.display = 'none';
+    console.error('error: ' + e);
+    
     alert('Something went wrong!');
 }
 
